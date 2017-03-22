@@ -16,7 +16,7 @@ public class A4Q2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-                
+
         //Tell what bob needs to ask first
         System.out.println("Please enter how many Inches there are?");
         //new scanner and to copy what was entered for the first question
@@ -25,8 +25,7 @@ public class A4Q2 {
         //going from inches to cm 
         Double answer = (amount * 2.54);
         //final statement
-        System.out.println("That is " + answer + " cm.");
-
+        System.out.println(amount + " inches is the same as " + answer + " cm.");
 
 
     }
