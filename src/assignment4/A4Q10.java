@@ -4,7 +4,6 @@ package assignment4;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author jonej9442
@@ -50,6 +49,7 @@ public class A4Q10 extends javax.swing.JFrame {
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("f");
 
         jPanel1.setBackground(new java.awt.Color(153, 153, 153));
 
@@ -67,6 +67,11 @@ public class A4Q10 extends javax.swing.JFrame {
         });
 
         jButton2.setText("C -> F");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -142,10 +147,29 @@ public class A4Q10 extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        String far = text1.getText();
+        //converting
+        int far1 = Integer.parseInt(far);
+       
         
         
-        
+        int conv = (int)(far1 - 32);
+        int resultC = (int)(conv/1.8);
+        text1.setText("" + resultC);
+
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+        String cel = text2.getText();
+        //converting 
+        int cel1 = Integer.parseInt(cel);
+        
+        int conv = (int)(cel1*1.8);
+        int resultC = (int)(conv + 32);
+        text2.setText("" + resultC);
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -147,69 +147,65 @@ public class A4Q9 extends javax.swing.JFrame {
 
     private void text1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_text1ActionPerformed
         // TODO add your handling code here:
-        
-        
     }//GEN-LAST:event_text1ActionPerformed
 
     private void OutputActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_OutputActionPerformed
         // TODO add your handling code here:
-        
-        
-        
     }//GEN-LAST:event_OutputActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         String number1 = text1.getText();
         String number2 = text2.getText();
-        
+
+        //converting
         int num1 = Integer.parseInt(number1);
         int num2 = Integer.parseInt(number2);
-        
+        //outputing the answer into the right box
         int add = (num1 + num2);
         Output.setText("" + add);
-                
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
         String number1 = text1.getText();
         String number2 = text2.getText();
-        
+
         int num1 = Integer.parseInt(number1);
         int num2 = Integer.parseInt(number2);
-        
+
         int sub = (num1 - num2);
         Output.setText("" + sub);
-        
-        
-        
+
+
+
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
         String number1 = text1.getText();
         String number2 = text2.getText();
-        
+
         int num1 = Integer.parseInt(number1);
         int num2 = Integer.parseInt(number2);
-        
+
         int mul = (num1 * num2);
         Output.setText("" + mul);
-        
+
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
         String number1 = text1.getText();
         String number2 = text2.getText();
-        
+
         int num1 = Integer.parseInt(number1);
         int num2 = Integer.parseInt(number2);
-        
-        int div = (num1/num2);
+
+        int div = (num1 / num2);
         Output.setText("" + div);
-        
+
     }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
