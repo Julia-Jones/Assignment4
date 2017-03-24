@@ -86,6 +86,7 @@ public class A4Q8 extends javax.swing.JFrame {
 
     private void buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonActionPerformed
         // TODO add your handling code here:
+        //string for name and the statement 
         String name = name1.getText();
         textarea.setText("Hello " + name );
         

@@ -171,13 +171,12 @@ public class A4Q9 extends javax.swing.JFrame {
         // TODO add your handling code here:
         String number1 = text1.getText();
         String number2 = text2.getText();
-
+        // converting
         int num1 = Integer.parseInt(number1);
         int num2 = Integer.parseInt(number2);
-
+        //subtracting numbers
         int sub = (num1 - num2);
         Output.setText("" + sub);
-
 
 
     }//GEN-LAST:event_jButton2ActionPerformed
@@ -186,10 +185,10 @@ public class A4Q9 extends javax.swing.JFrame {
         // TODO add your handling code here:
         String number1 = text1.getText();
         String number2 = text2.getText();
-
+        //converting
         int num1 = Integer.parseInt(number1);
         int num2 = Integer.parseInt(number2);
-
+        // multiplying numbers
         int mul = (num1 * num2);
         Output.setText("" + mul);
 
@@ -199,10 +198,10 @@ public class A4Q9 extends javax.swing.JFrame {
         // TODO add your handling code here:
         String number1 = text1.getText();
         String number2 = text2.getText();
-
+        // converting 
         int num1 = Integer.parseInt(number1);
         int num2 = Integer.parseInt(number2);
-
+        // dividing numbers
         int div = (num1 / num2);
         Output.setText("" + div);
 

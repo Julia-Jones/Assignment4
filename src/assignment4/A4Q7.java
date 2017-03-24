@@ -17,11 +17,10 @@ public class A4Q7 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        //Scanner created 
         Scanner input = new Scanner(System.in);
-        //sqaures start at 1 
+        //staring @ square 1
         double total = 1;
-        //while loop created 
+        //loop to keep asking 
         while (total < 100) {
             System.out.println("Enter the numbers:");
             double N = input.nextDouble();
@@ -51,11 +50,11 @@ public class A4Q7 {
                 total = 86;
             }
 
-            //tell location 
-            System.out.println("You are on" + total);
+            //place statement 
+            System.out.println("You are on " + total);
 
-            // if reached 100, then you win 
-            //print out 
+            // if reached 100
+            //winning statement 
             if (total == 100) {
                 System.out.println("You Won!");
             }

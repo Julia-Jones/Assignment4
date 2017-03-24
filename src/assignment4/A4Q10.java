@@ -78,10 +78,10 @@ public class A4Q10 extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(23, 23, 23)
+                .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 81, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(text2)
@@ -150,9 +150,7 @@ public class A4Q10 extends javax.swing.JFrame {
         String far = text1.getText();
         //converting
         int far1 = Integer.parseInt(far);
-       
-        
-        
+       // Fahrenheit subrtact 32 then divide by 1.8
         int conv = (int)(far1 - 32);
         int resultC = (int)(conv/1.8);
         text1.setText("" + resultC);
@@ -164,10 +162,10 @@ public class A4Q10 extends javax.swing.JFrame {
         String cel = text2.getText();
         //converting 
         int cel1 = Integer.parseInt(cel);
-        
+        // celsius * 1.8 then adding 32
         int conv = (int)(cel1*1.8);
-        int resultC = (int)(conv + 32);
-        text2.setText("" + resultC);
+        int resultF = (int)(conv + 32);
+        text2.setText("" + resultF);
         
     }//GEN-LAST:event_jButton2ActionPerformed
 
